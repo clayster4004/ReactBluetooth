@@ -1,4 +1,3 @@
-
 .whole-page {
   height: 100vh;
   display: flex;
@@ -8,30 +7,22 @@
 .header {
   display: flex;
   flex-direction: row;
-  flex: 0 0 20%;
-  background-color: var(--charcoal);
+  background-color: black;
   color: white;
-}
-
-.controls {
-  display: flex;
-  flex: 0 0 25%;
   justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-.welcome {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 50%;
-  justify-content: center;
-}
-
+.controls,
+.welcome,
 .connect {
   display: flex;
   flex-direction: column;
-  flex: 0 0 25%;
   justify-content: center;
   align-items: center;
+  margin: 0 10px; /* adds spacing between header items */
+  /* Removed fixed flex-basis values so that the content doesn't span the entire width */
 }
 
 .game {
@@ -40,7 +31,37 @@
   flex: 0 0 80%;
 }
 
+.optionBlue {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  /* margin-right: 10px; <-- removed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.optionRed {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  /* margin-left: 10px; <-- removed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+/* Container for both options */
 .game-body {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
